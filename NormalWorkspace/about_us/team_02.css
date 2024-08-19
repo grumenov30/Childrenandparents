@@ -1,0 +1,65 @@
+body {
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns, each taking up 1 fractional unit */
+    gap: 10px; /* Space between profiles */
+}
+
+
+.profile {
+    display: inline-grid;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.profile-img {
+    width: 100px; /* Small image size */
+    height: 120px;
+    border-radius: 5%; /* Makes the image round */
+    margin: auto; /* Space between the image and the text */
+}
+
+.profile-info {
+    max-width: 1000px;
+}
+
+.profile-info h2 {
+    padding: 10px;
+    margin: 0;
+    font-size: 1.3em;
+    color: #333;
+    font-size: 18px;
+}
+
+.profile-info p {
+    text-align: center;
+    margin: auto;
+    color: #666;
+    font-size: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}

@@ -1,0 +1,171 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-content {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 5px;
+    text-align: left;
+}
+
+
+/* Styling for the h1 */
+.header-content h1 {
+    margin: 0 0 0 10px;
+    /* Add margin to the left of the heading for spacing */
+    font-size: 30px;
+}
+
+/* Styling for the logo */
+.header-content .logo {
+    width: 130px;
+}
+
+.header-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* General styling for the nav-box */
+.nav-box {
+    background-color: #6482AD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Reset padding and margin, set font family */
+body,
+ul {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    background-color: #6482AD;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: #025d75;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: center;
+}
+
+ul li a:hover,
+ul li a:focus {
+    background: #6482AD;
+    color: rgb(112, 202, 235);
+}
+
+ul li:hover ul.dropdown,
+ul li:focus ul.dropdown {
+    display: block;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    /* margin-left: 250px; */
+}
+
+.homepage {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #4dc2d6;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #4dc2d6;
+    border-radius: 2px;
+    transition: transform 0.3s;
+    font-size: 25px;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    transform: scale(1.2);
+    background-color: rgb(147, 176, 197);
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: center;
+    margin-bottom: 20px;
+    /* add some space between paragraphs */
+    line-height: 1.5;
+    /* improve readability with a taller line height */
+    max-width: 1300px;
+    /* limit the width to prevent text from getting too wide */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding:10px;
+    /* add some padding for breathing room */
+    letter-spacing: 0.05em;
+    /* enhance readability */
+    color: #333;
+    /* add some color contrast */
+}
+
+.family {
+    width: 50%; /* adjust the width to your liking */
+    border-radius: 10px; /* add a slight rounded corner effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow effect */
+    margin: 20px auto; /* add some margin to center the image */
+    display: block; /* make the image a block element to center it */
+}

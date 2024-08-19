@@ -1,0 +1,160 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: auto;
+    background-color: #F5EDED;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+footer .content h4 {
+    font-size: 80%;
+}
+
+footer .logo {
+    width: 290px;
+    margin-bottom: 0px;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+footer .links a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer .links a:hover {
+    color: #6482AD;
+    font-weight: bold;
+}
+
+footer .contacts a{
+    color: rgb(28, 199, 229);
+    text-decoration: none;
+}
+
+footer .textwrap {
+    flex: 1;
+    margin: 20px;
+    max-width: 300px;
+}
+
+footer h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+footer .textwrap p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+footer .socials a{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+    color: #6482AD;
+    font-weight: bold;
+}
+
+footer div:last-child {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+footer div:last-child p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+footer div:last-child p:last-child {
+    margin-bottom: 0;
+}
+
+footer .inner {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    /* Ensure the copyright section has enough spacing and is visually separated */
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .content, 
+    footer .links, 
+    footer .textwrap, 
+    footer .contacts,
+    footer .socials,
+    footer div:last-child {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    footer .logo {
+        width: 200px;
+    }
+}

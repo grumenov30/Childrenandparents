@@ -1,0 +1,50 @@
+body {
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column; /* Stack profiles vertically */
+    gap: 20px; /* Space between profiles */
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.profile-img {
+    width: 100px; /* Small image size */
+    height: 120px;
+    border-radius: 5%; /* Makes the image round */
+    margin-right: 15px; /* Space between the image and the text */
+}
+
+.profile-info {
+    max-width: 1000px;
+}
+
+.profile-info h2 {
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.profile-info p {
+    text-align: left;
+    margin: auto;
+    color: #666;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+}
